@@ -293,7 +293,7 @@ nav {
 .project-image {
     width: 100%;
     height: 200px;
-    background: linear-gradient(45deg, #00d4ff, #7c3aed);
+    background: linear-gradient(to left, #fc00ff, #00dbde);
     position: relative;
     overflow: hidden;
     display: flex;
@@ -443,4 +443,11 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+.social-icon {
+  width: 40px;  /* Adjust this value as needed */
+  height: 40px; /* Adjust this value as needed */
+  object-fit: contain; /* This prevents the image from stretching or squishing */
+  vertical-align: middle; /* Helps align the icon with the text */
+  margin-right: 8px; /* Adds a little space between the icon and the text */
 }
