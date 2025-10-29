@@ -38,14 +38,14 @@ document.querySelectorAll(".fade-in").forEach((el) => {
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
 
-// Resume button event listener (moved outside scroll event)
-const alertButton = document.getElementById("alertbutton");
-if (alertButton) {
-  alertButton.addEventListener("click", function (e) {
-    e.preventDefault();
-    alert("(304, 503) Page is temporary unavailable");
-  });
-}
+// // Resume button event listener (moved outside scroll event)
+// const alertButton = document.getElementById("alertbutton");
+// if (alertButton) {
+//   alertButton.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     alert("Page temporary unavailable");
+//   });
+// }
 
 // Update active section on scroll
 window.addEventListener("scroll", () => {
