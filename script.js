@@ -69,3 +69,10 @@ window.addEventListener("scroll", () => {
 
 // Update year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
+
+
+// chivron
+function toggleDescription(header) {
+    const dropdown = header.parentElement;
+    dropdown.classList.toggle('active');
+}
