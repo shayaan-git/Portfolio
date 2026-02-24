@@ -22,8 +22,17 @@ body {
 
 #more-projects h3 {
   text-align: center;
-  font-size: 24px;
-  transform: rotateX(58deg);
+  font-size: 30px;
+  transform: rotateX(70deg);
+  transition: all 0.5s ease-in-out;
+}
+
+#more-projects h3:hover {
+  color: #fff;
+  transform: rotateX(0deg);
+  scale: 1.2;
+  text-shadow: 0 0 8px #fdbb2dd8;
+  cursor: grabbing;
 }
 
 /* Header */
@@ -87,7 +96,7 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(45deg, #00d4ff, #3ded3a);
+  background: linear-gradient(45deg, #ffc400, #eda23a);
   transition: width 0.3s ease;
 }
 
@@ -154,7 +163,7 @@ nav {
   font-size: 0.9rem;
   margin-bottom: 2rem;
   color: #24f0ff;
-  cursor: grab;
+  cursor: pointer;
   animation: pulse 2s infinite;
 }
 
@@ -493,7 +502,7 @@ nav {
 }
 
 .contact-link:hover {
-  background: linear-gradient(45deg, #00d4ff, #7c3aed);
+  background: linear-gradient(45deg, #fdbb2dd8, #f12711e2);
   transform: translateY(-2px);
 }
 
@@ -544,7 +553,6 @@ footer {
   }
 }
 
-/* Scroll animations */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -556,11 +564,11 @@ footer {
   transform: translateY(0);
 }
 .social-icon {
-  width: 40px; /* Adjust this value as needed */
-  height: 40px; /* Adjust this value as needed */
-  object-fit: contain; /* This prevents the image from stretching or squishing */
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
   vertical-align: middle; /* Helps align the icon with the text */
-  margin-right: 8px; /* Adds a little space between the icon and the text */
+  margin-right: 8px;
 }
 
 /* chivron */
@@ -581,7 +589,7 @@ footer {
 }
 
 .dropdown-header:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #ffffff14;
 }
 
 .dropdown-header span {
@@ -604,7 +612,7 @@ footer {
   border-right: 2px solid #aaa;
   border-bottom: 2px solid #aaa;
   transform: rotate(45deg);
-  margin-top: -2px;
+  margin-top: 2px;
 }
 
 .dropdown-content {
